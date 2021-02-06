@@ -1,0 +1,161 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+body nav {
+    margin: 0 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+    color:  #a4a5a5;
+}
+
+body nav ul.nav {
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+body nav ul.nav a {
+    margin: 0 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.btn-contacto {
+    padding: 10px 20px;
+    background-color: #fff;
+    color:  #a4a5a5;
+}
+
+.btn-contacto:hover {
+    animation-name: opacidad;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opacidad {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+
+/*HEADER*/
+
+header.bg-img {
+    background: url(/images/bg-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header img.logo {
+    width: 30%;
+    height: 30%;
+}
+
+header p {
+    color: #a4a5a5;
+}
+
+header span {
+    color: #a4a5a5;
+}
+
+/*MAIN*/
+
+main section {
+    text-align: justify;
+    color: #a4a5a5;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+main section h3 span {
+    font-size: 2rem;
+    color: #6babae;
+    letter-spacing: 2px;
+}
+
+main .cuadradito {
+    background-color: #6babae;
+}
+
+
+main .coloriza {
+    filter: saturate(10%);
+  }
+  
+main .coloriza:hover {
+    filter: saturate(100%);
+    transition: all 0.2s ease-in;
+}
+
+main h2 {
+    color: #6babae;
+}
+
+main h2:hover {
+    color: #a4a5a5;
+}
+
+main section.bg-quote {
+    background: url(/images/bg-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section#services p {
+    color: #a4a5a5;
+}
+
+main section#services h3 {
+    color: #6babae;
+}
+
+main section#mision{
+    background-color: #03120e;
+}
+
+main section#esquema h4{
+    color: #6babae;
+}
+
+main section#benefits.bg-benefits {
+    background: url(/images/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section#contact.bg-contact {
+    background: url(/images/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main section#contact p {
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.58);
+}
+
+main section .btn-btn {
+    background-color: #6babae;
+}
+
+main section .btn-btn:hover {
+    background-color: #a4a5a5;
+}
+
+
+footer {
+    color: #a4a5a5;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
