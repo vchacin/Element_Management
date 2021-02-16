@@ -3,14 +3,15 @@ body {
     color: #ffffff;
 }
 
-body nav {
+
+header nav {
     margin: 0 20px 10px;
     display: flex;
     justify-content: flex-end;
-    color:  #a4a5a5;
+    color: #a4a5a5;
 }
 
-body nav ul.nav {
+header nav ul {
     height: auto;
     display: flex;
     list-style: none;
@@ -18,16 +19,40 @@ body nav ul.nav {
     align-items: center;
 }
 
-body nav ul.nav a {
-    margin: 0 10px;
+header nav ul a {
+    margin-left: 40px;
     font-weight: 500;
     letter-spacing: 2px;
+    transition: all 3s ease-out;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    display: inline-block;
+    position: relative;
+}
+
+header nav ul a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+  
+header nav ul a:hover:after { 
+    width: 100%; 
+    left: 0; 
 }
 
 .btn-contacto {
     padding: 10px 20px;
     background-color: #fff;
-    color:  #a4a5a5;
 }
 
 .btn-contacto:hover {
@@ -46,24 +71,33 @@ body nav ul.nav a {
     }
 }
 
-/*HEADER*/
-
 header.bg-img {
-    background: url(/images/bg-4.jpg);
+    background-image: url(/images/bg03.jpg);
     background-repeat: no-repeat;
+    background-position-x: center;
     background-size: cover;
+    animation: slideBg 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+    animation-direction: alternate;
 }
 
-header img.logo {
-    width: 30%;
-    height: 30%;
+@keyframes slideBg {
+    0% {
+        background-image: url(/images/bg03.jpg);
+    }
+    25% {
+        background-image: url(/images/bg03.jpg);
+    }
+    50% {
+        background-image: url(/images/bg-4.jpg);
+    }
+    100% {
+        background-image: url(/images/bg-4.jpg);
+    }
 }
 
 header p {
-    color: #a4a5a5;
-}
-
-header span {
     color: #a4a5a5;
 }
 
@@ -89,15 +123,25 @@ main .cuadradito {
 
 main .coloriza {
     filter: saturate(10%);
-  }
+    transition: filter 1s ease-out;
+}
   
 main .coloriza:hover {
     filter: saturate(100%);
-    transition: all 0.2s ease-in;
+    animation: crescendo 1s ease;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes crescendo {
+    0%   {transform: scale(1);}
+    100% {transform: scale(1.1);}
+  }
+
 }
 
 main h2 {
     color: #6babae;
+    transition: color 1s ease-out;
 }
 
 main h2:hover {
@@ -150,12 +194,43 @@ main section .btn-btn:hover {
     background-color: #a4a5a5;
 }
 
+div {
+   border: 1px solid red;
+}
+
+/* Whatsapp*/
+
+.whats-app {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 15px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+  
+.whats-app:hover {
+    color: #FFF;
+}
+
+.my-float {
+    margin-top: 16px;
+}  
+
+/* Instagram*/
+
+.ig-container {
+    justify-content: center;
+    margin-bottom: 90px;
+    height: auto;
+}
 
 footer {
     color: #a4a5a5;
 }
-
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
