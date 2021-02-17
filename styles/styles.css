@@ -133,8 +133,8 @@ main .coloriza:hover {
 }
 
 @keyframes crescendo {
-    0%   {transform: scale(1);}
-    100% {transform: scale(1.1);}
+    0%   {transform: scale(0.9);}
+    100% {transform: scale(1);}
   }
 
 }
@@ -173,25 +173,63 @@ main section#esquema h4{
 main section#benefits.bg-benefits {
     background: url(/images/bg-2.jpg);
     background-repeat: no-repeat;
+    background-position-x: center;
     background-size: cover;
+    animation: slideBg1 8s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+    animation-direction: alternate;
+}
+
+@keyframes slideBg1 {
+    0% {
+        background-image: url(/images/bg-2.jpg);
+    }
+    25% {
+        background-image: url(/images/bg-2.jpg);
+    }
+    50% {
+        background-image: url(/images/bg-6.jpg);
+    }
+    100% {
+        background-image: url(/images/bg-6.jpg);
+    }
 }
 
 main section#contact.bg-contact {
     background: url(/images/contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
 }
 
 main section#contact p {
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.58);
+    outline: none;
+}
+
+main section#contact select {
+    outline: none;
+}
+
+main section#contact input {
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+  
+main section#contact input:focus{
+    background-color: #fff;
 }
 
 main section .btn-btn {
     background-color: #6babae;
+    border: 2px solid #6babae;
 }
 
 main section .btn-btn:hover {
-    background-color: #a4a5a5;
+    background-color: #fff;
+    border: 2px solid #6babae;
+    color: #6babae;
 }
 
 div {
@@ -204,8 +242,8 @@ div {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 20px;
-    right: 15px;
+    bottom: 2%; /*20px*/
+    right: 1%; /*15px*/
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -233,4 +271,8 @@ div {
 
 footer {
     color: #a4a5a5;
+}
+
+footer i{
+    color: #6babae;
 }
