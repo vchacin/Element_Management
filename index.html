@@ -24,29 +24,36 @@
 
     <div id="wrapper-contenido" style="display: none;">
         
-        <header class="bg-img h-screen relative">
+        <header class="bg-img h-screen relative flex flex-wrap justify-end">
 
-            
-            <nav class="hidden md:flex pt-8 px-2 md:px-4">
-    
-                <ul class="text-gray-500 text-sm">
-                    <li>
-                        <a href="#inicio" class="js-scroll-trigger hover:text-white transition duration-500">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#nosotros" class="js-scroll-trigger hover:text-white transition duration-500">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#services" class="js-scroll-trigger hover:text-white transition duration-500">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="#location" class="js-scroll-trigger hover:text-white transition duration-500">Ubicación</a>
-                    </li>
-                    <li>
-                        <a href="#contact" class="js-scroll-trigger btn-contacto">Contacto</a>
-                    </li>
-                </ul>
-    
+            <nav class="flex items-center justify-end flex-wrap w-full h-12 py-2">
+        
+                <div class="block lg:hidden">
+                    <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                    </button>
+                </div>
+                
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6" id="nav-content">
+                    <ul class="list-reset flex-col lg:flex-row justify-end flex-1 items-end lg:items-center text-gray-500 text-sm">
+                        <li>
+                            <a href="#inicio" class="js-scroll-trigger hover:text-white transition duration-500">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#nosotros" class="js-scroll-trigger hover:text-white transition duration-500">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="js-scroll-trigger hover:text-white transition duration-500">Servicios</a>
+                        </li>
+                        <li>
+                            <a href="#location" class="js-scroll-trigger hover:text-white transition duration-500">Ubicación</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="js-scroll-trigger btn-contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
             </nav>
     
             <div id="inicio" class="text-left flex justify-center md:justify-start items-center h-80 md:h-4/5 lg:h-3/5 w-full md:mb-96 lg:mb-2 px-8 lg:px-24">
@@ -254,19 +261,7 @@
                         </div>
                     </div> 
                 </section> 
-    
-                <section id="location" class="w-full h-auto md:h-screen py-14 lg:py-16 px-8 lg:px-24">
-                    <div class="w-full h-auto flex flex-wrap font-normal tracking-widest relative anima_up">
-                        <div class="w-full lg:w-1/6 h-full pb-8 font-bold text-left lg:text-right px-4">
-                            <h2 class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">UBICACIÓN</h2>
-                        </div>
-                        <div class="w-full lg:w-5/6 h-full px-6 lg:px-8 relative text-xs lg:text-base">ESTAMOS EN LA <span class="font-bold">RIVIERA MAYA, MÉXICO</span>
-                            <img class="w-4/6" src="/images/map.png" alt="Ubicacion en Riviera Maya, Mexico">
-                            <img class="bounceMap animate-ping absolute inset-2/3" src="images/bg-logo.png" alt="logo-simple">
-                        </div>
-                    </div> 
-                </section> 
-    
+
                 <section id="benefits" class="bg-benefits w-full h-auto md:h-screen py-28 lg:py-16 px-8 lg:px-24">
                     <div class="w-full h-auto flex flex-wrap justify-around leading-20 font-normal tracking-wide lg:px-4 anima_up">
                         <div class="w-full lg:w-1/6 h-full pb-8 font-bold text-left lg:text-right px-4 anima_right">
@@ -298,104 +293,117 @@
                     </div> 
                 </section> 
     
+                <section id="location" class="w-full h-auto md:h-screen py-14 lg:py-16 px-8 lg:px-24">
+                    <div class="w-full h-auto flex flex-wrap font-normal tracking-widest relative anima_up">
+                        <div class="w-full lg:w-1/6 h-full pb-8 font-bold text-left lg:text-right px-4">
+                            <h2 class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">UBICACIÓN</h2>
+                        </div>
+                        <div class="w-full lg:w-5/6 h-full px-6 lg:px-8 relative text-xs lg:text-base">ESTAMOS EN LA <span class="font-bold">RIVIERA MAYA, MÉXICO</span>
+                            <img class="w-4/6" src="/images/map.png" alt="Ubicacion en Riviera Maya, Mexico">
+                            <img class="bounceMap animate-ping absolute inset-2/3" src="images/bg-logo.png" alt="logo-simple">
+                        </div>
+                    </div> 
+                </section> 
+
                 <section id="contact" class="bg-contact w-full h-screen py-10 lg:py-18 px-8 lg:px-24">
     
-                        <div class="w-full flex flex-wrap anima_up">
-                            <div class="w-full lg:w-1/2 h-full">
-                                <div class="w-full pb-4 flex">
-                                    <img class="w-12 md:w-16 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple">
-                                    <p class="w-full text-white text-left uppercase leading-4 md:leading-24 font-semibold tracking-widest text-xs md:text-xl lg:text-2xl">¿LISTO PARA EMPEZAR? <br/> LLÁMANOS Y MEJORA LA CALIDAD DE VIDA EN TU CONDOMINIO.</p>
-                                </div>
-                                
-                                <!-- CHECK -->
-                                <div class="w-full">
-                                    <form action="mailto:direccion@correo.com" method="post" enctype="text/plain">
-                                      <div class="bg-white bg-opacity-75 shadow-md px-8 py-2 flex flex-col text-gray-500">
-                                        <div class="-mx-3 md:flex">
-    
-                                          <div class="md:w-1/2 px-2">
-                                            <label class="tracking-wide text-xs font-bold mb-2" for="name">
-                                              NOMBRE
-                                            </label>
-                                            <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="name" type="text" placeholder="Ingresa tu nombre">
-                                          </div>
-    
-                                          <div class="md:w-1/2 px-2">
-                                            <label class="tracking-wide text-xs font-bold mb-2" for="phone">
-                                              TELÉFONO
-                                            </label>
-                                            <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="phone" type="text" placeholder="00 0000 000">
-                                          </div>
-    
-                                        </div>
-    
-                                        <div class="-mx-3 md:flex px-2">
-                                          <div class="md:w-full">
-                                            <label class="tracking-wide text-xs font-bold mb-2" for="email">
-                                              EMAIL
-                                            </label>
-                                            <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2" id="email" type="email" placeholder="Ingresa tu email">
-                                          </div>
-                                        </div>
-    
-                                        <div class="-mx-3 md:flex">
-                                          <div class="md:w-1/2 px-2">
-                                            <label class="tracking-wide text-xs font-bold" for="hab">
-                                              UNIDADES HABITACIONALES
-                                            </label>
-                                            <div>
-                                              <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-2" id="hab">
-                                                <option></option>
-                                                <option>1 a 10</option>
-                                                <option>10 a 30</option>
-                                                <option>30 o más</option>
-                                              </select>
-                                            </div>
-                                          </div>
-    
-                                          <div class="md:w-1/2 px-2">
-                                            <label class="tracking-wide text-xs font-bold" for="city">
-                                              CIUDAD
-                                            </label>
-                                            <div>
-                                              <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-2 pr-8" id="city">
-                                                <option></option>
-                                                <option></option>
-                                                <option></option>
-                                              </select>
-                                            </div>
-                                          </div>
-                                        </div>
-    
-                                        <div class="-mx-3 md:flex mb-2 px-2">
-                                            <div class="md:w-full mb-2 md:mb-0">
-                                              <label class="tracking-wide text-xs font-bold mb-2" for="hab">
-                                                COMENTARIO
-                                              </label>
-                                              <div>
-                                                <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="comentario" type="text" placeholder="Déjanos algún comentario"></textarea>
-                                              </div>
-                                            </div>
-      
-                                          </div>
-    
-    
-                                        <div class="-mx-3 md:flex mt-2 px-2">
-                                          <div class="w-full">
-                                            <button class="btn-btn w-full text-white font-bold px-4 py-2">
-                                              ENVIAR
-                                            </button>
-                                          </div>
-                                        </div>
-    
-                                      </div>
-                                    </form>
-                                </div>
-                                  <!-- CHECK -->
+                    <div class="w-full flex flex-wrap anima_up">
+                        <div class="w-full lg:w-1/2 h-full">
+                            <div class="w-full pb-4 flex">
+                                <img class="w-12 md:w-16 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple">
+                                <p class="w-full text-white text-left uppercase leading-4 md:leading-24 font-semibold tracking-widest text-xs md:text-xl lg:text-2xl">¿LISTO PARA EMPEZAR? <br/> LLÁMANOS Y MEJORA LA CALIDAD DE VIDA EN TU CONDOMINIO.</p>
                             </div>
+                            
+                            <!-- CHECK -->
+                            <div class="w-full">
+                                <form action="mailto:direccion@correo.com" method="post" enctype="text/plain">
+                                  <div class="bg-white bg-opacity-75 shadow-md px-8 py-2 flex flex-col text-gray-500">
+                                    <div class="-mx-3 md:flex">
+
+                                      <div class="md:w-1/2 px-2">
+                                        <label class="tracking-wide text-xs font-bold mb-2" for="name">
+                                          NOMBRE
+                                        </label>
+                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="name" type="text" placeholder="Ingresa tu nombre">
+                                      </div>
+
+                                      <div class="md:w-1/2 px-2">
+                                        <label class="tracking-wide text-xs font-bold mb-2" for="phone">
+                                          TELÉFONO
+                                        </label>
+                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="phone" type="text" placeholder="00 0000 000">
+                                      </div>
+
+                                    </div>
+
+                                    <div class="-mx-3 md:flex px-2">
+                                      <div class="md:w-full">
+                                        <label class="tracking-wide text-xs font-bold mb-2" for="email">
+                                          EMAIL
+                                        </label>
+                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2" id="email" type="email" placeholder="Ingresa tu email">
+                                      </div>
+                                    </div>
+
+                                    <div class="-mx-3 md:flex">
+                                      <div class="md:w-1/2 px-2">
+                                        <label class="tracking-wide text-xs font-bold" for="hab">
+                                          UNIDADES HABITACIONALES
+                                        </label>
+                                        <div>
+                                          <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-2" id="hab">
+                                            <option></option>
+                                            <option>1 a 10</option>
+                                            <option>10 a 30</option>
+                                            <option>30 o más</option>
+                                          </select>
+                                        </div>
+                                      </div>
+
+                                      <div class="md:w-1/2 px-2">
+                                        <label class="tracking-wide text-xs font-bold" for="city">
+                                          CIUDAD
+                                        </label>
+                                        <div>
+                                          <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-2 pr-8" id="city">
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="-mx-3 md:flex mb-2 px-2">
+                                        <div class="md:w-full mb-2 md:mb-0">
+                                          <label class="tracking-wide text-xs font-bold mb-2" for="hab">
+                                            COMENTARIO
+                                          </label>
+                                          <div>
+                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="comentario" type="text" placeholder="Déjanos algún comentario"></textarea>
+                                          </div>
+                                        </div>
+  
+                                      </div>
+
+
+                                    <div class="-mx-3 md:flex mt-2 px-2">
+                                      <div class="w-full">
+                                        <button class="btn-btn w-full text-white font-bold px-4 py-2">
+                                          ENVIAR
+                                        </button>
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </form>
+                            </div>
+                              <!-- CHECK -->
                         </div>
-    
+                    </div>
+
                 </section>
+    
     
             </div>
     
@@ -405,7 +413,7 @@
     
         </main>
     
-        <footer class="w-full h-auto py-4 md:py-10 px-8 lg:px-24 flex flex-col text-left text-sm">
+        <footer class="w-full h-auto py-4 md:py-8 px-8 lg:px-24 flex flex-col text-left text-sm">
     
             <div class="w-full flex flex-row flex-wrap">
                 <div class="w-1/6 h-18 flex flex-col">
@@ -435,7 +443,12 @@
     
         </footer>
     </div>
-    
+
+    <script>
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
     <script src="scripts/animar.js"></script>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/jquery.easeing.min.js"></script>
