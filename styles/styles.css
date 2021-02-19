@@ -1,58 +1,3 @@
-/*.loader-container {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    z-index:1000;
-}
-
-.loader-container .loader1 {
-    position: absolute;
-    top: 50%;  
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    border: solid 8px transparent;
-    border-top-color: #6babae;
-    border-left-color: #6babae;
-    border-radius: 50%;
-    -webkit-animation: ease-out;
-    animation: loaderD 1.2s linear infinite;
-}
-
-.loader-container .loader2 {
-    position: absolute;
-    top: 50%;  
-    left: 50%;
-    width: 170%;
-    height: 170%;
-    border: solid 8px transparent;
-    border-top-color: #a4a5a5;
-    border-left-color: #a4a5a5;
-    border-radius: 50%;
-    animation: loaderD2 1.2s linear infinite;
-
-}
-
-@keyframes loaderD {
-    0%{
-        transform: rotate (0deg);
-    }
-    100% {
-        transform: rotate (360deg);
-    }
-}
-
-@keyframes loaderD2 {
-    0%{
-        transform: translate(-50%, -50%) rotate (0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate (-360deg);
-    }
-}*/
-
-
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -72,6 +17,7 @@ header nav ul {
     list-style: none;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 header nav ul a {
@@ -127,7 +73,7 @@ header nav ul a:hover:after {
 }
 
 header.bg-img {
-    background-image: url(/images/bg03.jpg);
+    background-image: url(/images/bg03.png);
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
@@ -139,16 +85,16 @@ header.bg-img {
 
 @keyframes slideBg {
     0% {
-        background-image: url(/images/bg03.jpg);
+        background-image: url(/images/bg03.png);
     }
     25% {
-        background-image: url(/images/bg03.jpg);
+        background-image: url(/images/bg03.png);
     }
     50% {
-        background-image: url(/images/bg-4.jpg);
+        background-image: url(/images/bg-4.png);
     }
     100% {
-        background-image: url(/images/bg-4.jpg);
+        background-image: url(/images/bg-4.png);
     }
 }
 
@@ -170,7 +116,6 @@ header p {
 .lds-ring {
     display: inline-block;
     position: relative;
-    top:50px;
     width: 80px;
     height: 80px;
     z-index: 100;
@@ -185,8 +130,9 @@ header p {
     border: 8px solid #fff;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: rgb(29, 243, 222) transparent transparent transparent;
+    border-color: rgb(86, 175, 166) transparent transparent transparent;
   }
+
   .lds-ring div:nth-child(1) {
     animation-delay: -0.45s;
   }
@@ -256,7 +202,7 @@ main h2:hover {
 }
 
 main section.bg-quote {
-    background: url(/images/bg-5.jpg);
+    background: url(/images/bg-5.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -278,7 +224,7 @@ main section#esquema h4{
 }
 
 main section#benefits.bg-benefits {
-    background: url(/images/bg-2.jpg);
+    background: url(/images/bg-2.png);
     background-repeat: no-repeat;
     background-position-x: center;
     background-size: cover;
@@ -290,21 +236,21 @@ main section#benefits.bg-benefits {
 
 @keyframes slideBg1 {
     0% {
-        background-image: url(/images/bg-2.jpg);
+        background-image: url(/images/bg-2.png);
     }
     25% {
-        background-image: url(/images/bg-2.jpg);
+        background-image: url(/images/bg-2.png);
     }
     50% {
-        background-image: url(/images/bg-6.jpg);
+        background-image: url(/images/bg-6.png);
     }
     100% {
-        background-image: url(/images/bg-6.jpg);
+        background-image: url(/images/bg-6.png);
     }
 }
 
 main section#contact.bg-contact {
-    background: url(/images/contacto.jpg);
+    background: url(/images/contacto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -349,8 +295,45 @@ main section .btn-btn:hover {
     color: #6babae;
 }
 
-div {
-   border: 1px solid red;
+main .bounceMap {
+    width: 8%;
+    position: absolute;
+}
+
+.anima_up {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.mostrar_up {
+    animation: mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.anima_right {
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.mostrar_right {
+    animation: mostrarDerecha 1s;
+}
+
+@keyframes mostrarDerecha {
+    0% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* Whatsapp*/
