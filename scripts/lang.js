@@ -1,8 +1,29 @@
 const LANG = {
-    NAVBAR: {
-        EN: "Deliver with Uber"
-    },
     HEADER: {
+        NAVBAR: {
+            TEXTO1: {
+                EN: "Make deliveries with "
+            },
+            TEXTO2: {
+                EN: "Earn money with your own schedule"
+            },
+            TEXTO3: {
+                EN: "Earn money with your own schedule"
+            },
+            TEXTO4: {
+                EN: "Earn money with your own schedule"
+            },
+            TEXTO5: {
+                EN: "Earn money with your own schedule"
+            }
+        },
+        DIV: {
+            TEXTO1: {
+                EN: "Make deliveries with "
+            }
+        }
+    },
+    MAIN: {
         TEXTO1: {
             PR: "Faça entregas com " ,
             EN: "Make deliveries with "
