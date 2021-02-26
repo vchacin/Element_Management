@@ -24,17 +24,17 @@
 
     <div id="wrapper-contenido" style="display: none;">
         
-        <header class="bg-img h-screen relative flex flex-wrap justify-end w-full">
+        <header class="bg-img h-screen relative flex flex-wrap justify-end pt-2 w-full">
 
-            <nav class="flex items-center justify-end flex-wrap w-full h-12 py-2 focus:outline-none">
+            <nav class="flex items-center justify-end flex-wrap w-full h-12 py-2 focus:outline-none fixed z-50">
         
                 <div class="block lg:hidden focus:outline-none">
-                    <button id="nav-toggle" class="flex items-center px-3 py-2 text-gray-500 hover:text-white hover:border-white focus:outline-none">
+                    <button id="nav-toggle" class="flex items-center px-3 py-2 text-gray-500 focus:outline-none">
                         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                     </button>
                 </div>
                 
-                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6" id="nav-content">
+                <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block" id="nav-content">
                     <ul class="list-reset flex-col lg:flex-row justify-end flex-1 items-end lg:items-center text-gray-500 text-sm">
                         <li>
                             <a href="#inicio" class="js-scroll-trigger hover:text-white transition duration-500">Inicio</a>
@@ -56,10 +56,15 @@
                 
             </nav>
     
-            <div id="inicio" class="text-left flex justify-center md:justify-start h-80 md:h-4/5 lg:h-3/5 w-full mb-96 lg:mb-2 px-8 lg:px-24">
+            <div id="inicio" class="text-left flex justify-center md:justify-start h-80 md:h-4/5 lg:h-3/5 w-full mt-32 md:mt-24 lg:mt-24 mb-96 lg:mb-2 px-8 lg:px-24">
                 <div class="w-full flex flex-col items-center md:items-start">
                     <a href="#nosotros" class="js-scroll-trigger hover:text-white transition duration-500"><img src="images/Logo.png" class="logo inline w-full md:w-80" alt="logo-empresa"></a>
                     <p class="w-2/3 lg:w-2/5 text-center md:text-left lg:pl-6 text-xs md:text-lg lg:text-2xl uppercase leading-4 md:leading-24 font-normal tracking-widest text-gray-500">Cuidamos cada elemento <br/> de tu patrimonio</p>
+                    <div class="lang flex flex-row w-2/3 lg:w-2/5 justify-center md:justify-start text-center md:text-left lg:pl-6 text-xs md:text-lg lg:text-2xl uppercase leading-4 md:leading-24 font-semibold tracking-widest pt-2">
+                        <p>ESP</p>
+                        <h5 class="px-4 text-gray-500">|</h5>
+                        <p>ENG</p>
+                    </div>
                 </div>
             </div>
     
@@ -88,7 +93,6 @@
                                     ADMINISTRACIÓN PROFESIONAL E INTEGRAL DE CONDOMINIOS
                                 </span> 
                                     EN LA RIVIERA MAYA; FOCALIZANDO ESFUERZOS PARA MANTENER EN ÓPTIMAS CONDICIONES LAS ÁREAS COMUNES Y AMENIDADES DE LOS MISMOS, LOGRANDO EL BUEN FUNCIONAMIENTO DE CADA UNA DE LAS INSTALACIONES DE SU PROPIEDAD.
-                                    
                             </div>
                         </div>
                     </div> 
@@ -298,7 +302,8 @@
                         <div class="w-full lg:w-1/6 h-full pb-8 font-bold text-left lg:text-right px-4">
                             <h2 class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">UBICACIÓN</h2>
                         </div>
-                        <div class="w-full lg:w-5/6 h-full px-6 lg:px-8 relative text-xs lg:text-base">ESTAMOS EN LA <span class="font-bold">RIVIERA MAYA, MÉXICO</span>
+                        <div class="w-full lg:w-5/6 h-full px-6 lg:px-8 relative text-xs lg:text-base">
+                            ESTAMOS EN LA <span class="font-bold">RIVIERA MAYA, MÉXICO</span>
                             <img class="w-4/6" src="/images/map.png" alt="Ubicacion en Riviera Maya, Mexico">
                             <img class="bounceMap animate-ping absolute inset-2/3" src="images/bg-logo.png" alt="logo-simple">
                         </div>
@@ -314,7 +319,6 @@
                                 <p class="w-full text-white text-left uppercase leading-4 md:leading-24 font-semibold tracking-widest text-xs md:text-xl lg:text-2xl">¿LISTO PARA EMPEZAR? <br/> LLÁMANOS Y MEJORA LA CALIDAD DE VIDA EN TU CONDOMINIO.</p>
                             </div>
                             
-                            <!-- CHECK -->
                             <div class="w-full">
                                 <form action="mailto:direccion@correo.com" method="post" enctype="text/plain">
                                   <div class="bg-white bg-opacity-75 shadow-md px-8 py-2 flex flex-col text-gray-500">
@@ -380,7 +384,8 @@
                                             COMENTARIO
                                           </label>
                                           <div>
-                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="comentario" type="text" placeholder="Déjanos algún comentario"></textarea>
+                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="comentario" type="text" placeholder="Déjanos algún comentario">
+                                            </textarea>
                                           </div>
                                         </div>
   
@@ -398,7 +403,6 @@
                                   </div>
                                 </form>
                             </div>
-                              <!-- CHECK -->
                         </div>
                     </div>
 
@@ -407,7 +411,7 @@
     
             </div>
     
-            <a  class="whats-app" href="https://api.whatsapp.com/send?phone=529841187711" target="_blank">
+            <a  class="whats-app" href="https://api.whatsapp.com/send?phone=529841187711&text=Quisiera%20consultar%20más%20información%20sobre%20sus%20servicios.&app_absent=0" target="_blank">
                 <i class="fab fa-whatsapp my-float"></i>
             </a>
     
@@ -453,7 +457,7 @@
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/jquery.easeing.min.js"></script>
     <script src="scripts/init.js"></script>
-
+    <script src="scripts/idx.js"></script>
 
 </body>
 </html>

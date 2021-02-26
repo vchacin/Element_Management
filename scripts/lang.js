@@ -2,109 +2,228 @@ const LANG = {
     HEADER: {
         NAVBAR: {
             TEXTO1: {
-                EN: "Make deliveries with "
+                EN: "Home"
             },
             TEXTO2: {
-                EN: "Earn money with your own schedule"
+                EN: "About Us"
             },
             TEXTO3: {
-                EN: "Earn money with your own schedule"
+                EN: "Services"
             },
             TEXTO4: {
-                EN: "Earn money with your own schedule"
+                EN: "Location"
             },
             TEXTO5: {
-                EN: "Earn money with your own schedule"
+                EN: "Contact"
             }
         },
         DIV: {
             TEXTO1: {
-                EN: "Make deliveries with "
+                EN: "We take care of each element <br/> of your heritage"
             }
         }
     },
     MAIN: {
-        TEXTO1: {
-            PR: "Faça entregas com " ,
-            EN: "Make deliveries with "
+        NOSOTROS: {
+            TEXT1:{
+                EN: "ABOUT US"
+            },
+            TEXT2:{
+                EN: "WE ARE A COMPANY SPECIALIZED IN THE <span class='font-bold'> PROFESSIONAL AND INTEGRAL CONDO MANAGEMENT</span> ON THE RIVIERA MAYA; FOCUSING EFFORTS TO KEEP COMMON AREAS AND AMENITIES THEREOF IN OPTIMAL CONDITIONS, ACHIEVING THE GOOD OPERATION OF EACH OF THE FACILITIES OF YOUR PROPERTY."
+            }
         },
-        TEXTO2: {
-            PR: "Ganhe dinheiro de acordo com sua programação" ,
-            EN: "Earn money with your own schedule"
+        QUOTE: {
+            TEXT1:{
+                EN: "A GOOD MANAGEMENT IS EQUAL TO <span class = 'font-semibold'> A PROPERTY IN OPTIMAL CONDITIONS WITH HIGH SURPLUS VALUE </span>"
+            }
+        },
+        SERVICIOS: {
+            TEXT1:{
+                EN: "SERVICES"
+            },
+            TEXT2:{
+                EN: "EXPERTS IN ADMINISTRATION"
+            },
+            TEXT3:{
+                EN: "Talent and human capital"
+            },
+            TEXT4:{
+                EN: "Effective financial management"
+            },
+            TEXT5:{
+                EN: "Generation of value and quality"
+            },
+            TEXT6:{
+                EN: "Planning, direction and control"
+            },
+            TEXT7:{
+                EN: "ADVANCED TECHNOLOGY"
+            },
+            TEXT8:{
+                EN: "Efficient processes"
+            },
+            TEXT9:{
+                EN: "Security and transparency"
+            },
+            TEXT10:{
+                EN: "Innovative techniques"
+            },
+            TEXT11:{
+                EN: "Good income management"
+            },
+            TEXT12:{
+                EN: "24/7 SUPPORT"
+            },
+            TEXT13:{
+                EN: "Personalized attention"
+            },
+            TEXT14:{
+                EN: "We solve daily problems of the type"
+            },
+            TEXT15:{
+                EN: "Operative"
+            },
+            TEXT16:{
+                EN: "Administrative"
+            },
+            TEXT17:{
+                EN: "Conflicts"
+            },
+            TEXT18:{
+                EN: "Information dissemination"
+            },
+            TEXT19:{
+                EN: "Property Supervision"
+            },
+            TEXT20:{
+                EN: "Component Repair"
+            },
+            TEXT21:{
+                EN: "EXPERT SUPPLIERS"
+            },
+            TEXT22:{
+                EN: "Teamwork"
+            },
+            TEXT23:{
+                EN: "Professional alliances"
+            },
+            TEXT24:{
+                EN: "Local talent"
+            }
+        },
+        MISION: {
+            TEXT1:{
+                EN: "MISSION"
+            },
+            TEXT2:{
+                EN: "TO BE THE LEADING COMPANY IN THE REGION, RECOGNIZED FOR OUR HIGH QUALITY SERVICE AND TECHNOLOGY APPLIED TO THE DAILY DEVELOPMENT OF THE PROPERTY WITH PERSONALIZED MONITORING OF EACH OWNER OR ADMINISTRATOR, ASSURING THEIR ASSETS AND GLOBAL SATISFACTION."
+            },
+            TEXT3:{
+                EN: "GUIDED BY TRANSPARENCY, INTEGRITY, SOLIDARITY, RESPONSIBILITY AND SOCIAL SECURITY."
+            },
+            TEXT4:{
+                EN: "VISION"
+            },
+            TEXT5:{
+                EN: "LEADING THE CONDO-HOTEL MANAGEMENT MARKET IN THE REGION BY OUR TECHNOLOGICAL, TRANSPARENT AND EFFECTIVE PROCESSES."
+            },
+            TEXT6:{
+                EN: "GUARANTEEING AN OPTIMAL SERVICE IN EACH ELEMENT OF THE PROPERTY OF OUR CLIENTS."
+            }
+        },
+        ESQUEMA: {
+            TEXT1:{
+                EN: "OUR METHOD"
+            },
+            TEXT2:{
+                EN: "ANALYSIS"
+            },
+            TEXT3:{
+                EN: "NEEDS, STRENGTHS AND OPPORTUNITIES."
+            },
+            TEXT4:{
+                EN: "PROPOSAL"
+            },
+            TEXT5:{
+                EN: '“THEY ARE NOT JUST NUMBERS, YOU HAVE TO GIVE THEM VALUE”.'
+            },
+            TEXT6:{
+                EN: "APPLICATION"
+            },
+            TEXT7:{
+                EN: "ACTION PLAN ACCORDING TO THE CONDOMINIUM."
+            },
+            TEXT8:{
+                EN: "RESIDENTS"
+            },
+            TEXT9:{
+                EN: "GOOD COMMUNICATION AND FOLLOW-UP."
+            }
+        },
+        BENEFICIOS: {
+            TEXTO1: {
+                EN: "BENEFITS"
+            },
+            TEXTO2: {
+                EN: "INTEGRAL SOLUTIONS"
+            },
+            TEXTO3: {
+                EN: "ACCESS TO REAL-TIME INFORMATION AND IMMEDIATE PROBLEM SOLUTION."
+            },
+            TEXTO4: {
+                EN: "CONTACT AND ADVICE"
+            },
+            TEXTO5: {
+                EN: "DIRECT CONTACT NUMBERS AT YOUR DISPOSAL FOR EMERGENCIES AND LEGAL ADVICE."
+            },
+            TEXTO6: {
+                EN: "OPTIMAL CONDITIONS"
+            },
+            TEXTO7: {
+                EN: "FOCUSED ON KEEPING COMMON AREAS AND AMENITIES IN OPTIMAL CONDITION."
+            }
+        },
+        UBICACION: {
+            TEXT1:{
+                EN: "LOCATION"
+            },
+            TEXT2:{
+                EN: "WE ARE IN THE <span class='font-bold'> RIVIERA MAYA, MEXICO </span>"
+            }
+        },
+        CONTACT: {
+            TEXT1:{
+                EN: "READY TO START? <br/> CALL US AND IMPROVE THE QUALITY OF LIFE IN YOUR CONDOMINIUM."
+            },
+            TEXT2:{
+                EN: "<label class='tracking-wide text-xs font-bold mb-2' for='name'>NAME</label><input class='w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2' id='name' type='text' placeholder='Please enter your name'>"
+            },
+            TEXT3:{
+                EN: "PHONE"
+            },
+            TEXT4:{
+                EN: "<label class='tracking-wide text-xs font-bold mb-2' for='email'>EMAIL</label><input class='w-full bg-gray-200 border border-gray-200 px-4 py-2' id='email' type='email' placeholder='Please enter your email'>"
+            },
+            TEXT5:{
+                EN: "HOUSING UNITS"
+            },
+            TEXT6:{
+                EN: "30 or more"
+            },
+            TEXT7:{
+                EN: "CITY"
+            },
+            TEXT8:{
+                EN: "<label class='tracking-wide text-xs font-bold mb-2' for='hab'>COMMENTARY</label><div><textarea class='w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none' id='comment' type='text' placeholder='Leave us some comment'></textarea></div>"
+            },
+            TEXT9:{
+                EN: "SEND"
+            }
         }
     },
-    MAIN: {
-        TEXT1:{
-            PR: "Entregue quando quiser",
-            EN: "Deliver when you want"
-        },
-        TEXT2:{
-            PR: "Trabalhe de acordo com sua programação",
-            EN: "Work on your own schedule"
-        },
-        TEXT3:{
-            PR: "Distribua algumas horas pela manhã, todas as noites ou apenas nos fins de semana. Você decide. Você é seu próprio patrão e pode escolher quando e quanto trabalhar.",
-            EN: "Spread a few hours in the morning, every night or just on weekends. You decide. You are your own boss and you can choose when and how much you work."
-        },
-        TEXT4:{
-            PR: "Entregue com o Uber",
-            EN: "Deliver with Uber"
-        },
-        TEXT5:{
-            PR: "Escolha o seu veículo",
-            EN: "Choose your vehicle"
-        },
-        TEXT6:{
-            PR: "Dependendo da sua cidade, você pode fazer entregas com seu veículo, bicicleta ou scooter.",
-            EN: "Depending on your city, you can make deliveries with your vehicle, bicycle or scooter."
-        },
-        TEXT7:{
-            PR: "Entregue com o Uber",
-            EN: "Deliver with Uber"
-        },
-        TEXT8:{
-            PR: "Ganhar dinheiro" ,
-            EN: "Earn money"
-        },
-        TEXT9:{
-            PR: "Você ganhará dinheiro levando às pessoas o que elas mais gostam. O que você faz entre uma entrega e outra é com você.",
-            EN: "You will earn money by bringing people what they like the most. What you do between one delivery and another is up to you."
-        },
-        TEXT10:{
-            PR: "Entregue com o Uber",
-            EN: "Deliver with Uber"
-        }
-    },
-    FOOTER:{
+    FOOTER: {
         TEXT1: {
-            PR: "Termos e Condições",
-            EN: "Terms and Conditions"
-        }
-    },
-    LEGAL:{
-        HEADER:{
-            TEXT1C: {
-                PR: "Última modificação: 09/02/2021",
-                EN: "Terms"
-            },
-            TEXT2C: {
-                PR: "Termos e Condições",
-                EN: "Terms and Conditions"
-            },
-            TEXT3C: {
-                PR: "Última atualização: 9 de fevereiro de 2021",
-                EN: "Last update: February 9 2021"
-            }
-        },
-        MAIN:{
-            TEXT1M: {
-                PR: "O usuário entende que a utilização dos NOSSOS SERVIÇOS DE REGISTRO INDIRETO COM A EMPRESA, SERVEM TOTALMENTE E APENAS PODEM CONECTAR CONDUTORES A PLATAFORMAS DE EMPREGO, para prosperar e aproximar os prestadores de serviços dos serviços em geral. Após o preenchimento de sua inscrição para admissão, cada parceiro de motorista deve enviar seus requisitos para os portais digitais oficiais, que serão redirecionados por nós, porém esses extremos ajudarão a completar o processo de incorporação do trabalho.",
-                EN: "The user understands that the use of OUR INDIRECT REGISTRATION SERVICES WITH THE COMPANY, SERVE TOTALLY AND ONLY TO BE ABLE TO CONNECT DRIVING PARTNERS WITH EMPLOYMENT PLATFORMS, to prosper and bring service providers closer to services in general. After you have completed your application for admission, each driving partner must submit their requirements to the official digital portals, which will be redirected by us, however these ends will help to complete the job incorporation process."
-            },
-            TEXT2M: {
-                PR: "Partners Drivers, atua como um intermediário oficial com licenças de promoção direta para afiliação de motoristas parceiros na América Central, América Latina e partes do Leste Asiático.",
-                EN: "Partners Drivers, acts as an official intermediary with direct promotion permits for affiliation of driver partners in Central America, Latin America and parts of East Asia."
-            }
+            EN: "PRIVACY"
         }
     }
 }
