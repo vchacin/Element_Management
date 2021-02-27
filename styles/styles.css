@@ -1,17 +1,14 @@
-
 body {
     font-family: 'Raleway', sans-serif;
     color: #ffffff;
     outline: none;
 }
-
 header nav {
     margin: 0 20px 10px;
     display: flex;
     justify-content: flex-end;
     color: #a4a5a5;
 }
-
 header nav ul {
     height: auto;
     display: flex;
@@ -20,7 +17,6 @@ header nav ul {
     align-items: center;
     position: relative;
 }
-
 header nav ul a {
     margin-left: 40px;
     font-weight: 500;
@@ -33,7 +29,6 @@ header nav ul a {
     display: inline-block;
     position: relative;
 }
-
 header nav ul a:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -46,34 +41,28 @@ header nav ul a:after {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
-  
 header nav ul a:hover:after { 
     width: 100%; 
     left: 0; 
 }
-
-header div#inicio div.lang p {
+div.lang p {
     color: #6babae;
     transition: all 0.5s ease;
     cursor: pointer;
 }
-
 header div#inicio div.lang p:hover {
     color: #fff;
 }
-
 .btn-contacto {
     padding: 10px 20px;
     background-color: #fff;
 }
-
 .btn-contacto:hover {
     animation-name: opacidad;
     animation-timing-function: ease;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-
 @keyframes opacidad {
     0% {
         opacity: 1;
@@ -82,7 +71,6 @@ header div#inicio div.lang p:hover {
         opacity: .5;
     }
 }
-
 header.bg-img {
     background-image: url(/images/bg03.png);
     background-repeat: no-repeat;
@@ -93,7 +81,6 @@ header.bg-img {
     backface-visibility: hidden;
     animation-direction: alternate;
 }
-
 @keyframes slideBg {
     0% {
         background-image: url(/images/bg03.png);
@@ -108,13 +95,10 @@ header.bg-img {
         background-image: url(/images/bg-4.png);
     }
 }
-
 header p {
     color: #a4a5a5;
 }
-
 /*LOADER*/
-
 .loader {
     height: 100vh;
     width: 100%;
@@ -130,7 +114,7 @@ header p {
     width: 80px;
     height: 80px;
     z-index: 100;
-  }
+}
   .lds-ring div {
     box-sizing: border-box;
     display: block;
@@ -143,7 +127,6 @@ header p {
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: rgb(86, 175, 166) transparent transparent transparent;
   }
-
   .lds-ring div:nth-child(1) {
     animation-delay: -0.45s;
   }
@@ -161,38 +144,30 @@ header p {
       transform: rotate(360deg);
     }
   }
-
 /*MAIN*/
-
 main section {
     text-align: justify;
     color: #a4a5a5;
     height: 100vh;
     background-color: #f1f1f1;
 }
-
 main section h3 span {
     font-size: 2rem;
     color: #6babae;
     letter-spacing: 2px;
 }
-
 main .cuadradito {
     background-color: #6babae;
 }
-
-
 main .coloriza {
     filter: saturate(10%);
     transition: filter 1s ease-out;
 }
-  
 main .coloriza:hover {
     filter: saturate(100%);
     animation: crescendo 1s ease;
     animation-fill-mode: forwards;  
 }
-
 @keyframes crescendo {
     0%   {
         transform: scale(1);
@@ -204,39 +179,30 @@ main .coloriza:hover {
         transform: scale(1);
     }
 }
-
-
 main h2 {
     color: #6babae;
     transition: color 1s ease-out;
 }
-
 main h2:hover {
     color: #a4a5a5;
 }
-
 main section.bg-quote {
     background: url(/images/bg-5.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 main section#services p {
     color: #a4a5a5;
 }
-
 main section#services h3 {
     color: #6babae;
 }
-
 main section#mision{
     background-color: #03120e;
 }
-
 main section#esquema h4{
     color: #6babae;
 }
-
 main section#benefits.bg-benefits {
     background: url(/images/bg-2.png);
     background-repeat: no-repeat;
@@ -247,7 +213,6 @@ main section#benefits.bg-benefits {
     backface-visibility: hidden;
     animation-direction: alternate;
 }
-
 @keyframes slideBg1 {
     0% {
         background-image: url(/images/bg-2.png);
@@ -262,67 +227,54 @@ main section#benefits.bg-benefits {
         background-image: url(/images/bg-6.png);
     }
 }
-
 main section#contact.bg-contact {
     background: url(/images/contacto.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
-
 main section#contact p {
     text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.58);
     outline: none;
 }
-
 main section#contact select {
     outline: none;
 }
-
 main section#contact textarea {
     outline: none;
     transition: 0.5s ease-in-out;
 }
-
 main section#contact textarea:focus{
     background-color: #fff;
 }
-
 main section#contact input {
     outline: none;
     transition: 0.5s ease-in-out;
 }
-  
 main section#contact input:focus{
     background-color: #fff;
 }
-
 main section .btn-btn {
     background-color: #6babae;
     border: 2px solid #6babae;
     outline: none;
 }
-
 main section .btn-btn:hover {
     background-color: #fff;
     border: 2px solid #6babae;
     color: #6babae;
 }
-
 main .bounceMap {
     width: 8%;
     position: absolute;
 }
-
 .anima_up {
     opacity: 0;
     transition: all 1s;
 }
-
 .mostrar_up {
     animation: mostrarArriba 1s;
 }
-
 @keyframes mostrarArriba {
     0% {
         transform: translateY(60px);
@@ -331,16 +283,13 @@ main .bounceMap {
         transform: translateY(0);
     }
 }
-
 .anima_right {
     opacity: 0;
     transition: all 0.8s;
 }
-
 .mostrar_right {
     animation: mostrarDerecha 1s;
 }
-
 @keyframes mostrarDerecha {
     0% {
         transform: translateX(60px);
@@ -349,15 +298,13 @@ main .bounceMap {
         transform: translateX(0);
     }
 }
-
 /* Whatsapp*/
-
 .whats-app {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 5%; /*20px*/
-    right: 2%; /*15px*/
+    bottom: 5%;
+    right: 2%;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -366,27 +313,21 @@ main .bounceMap {
     box-shadow: 2px 2px 3px #999;
     z-index: 100;
 }
-  
 .whats-app:hover {
     color: #FFF;
 }
-
 .my-float {
     margin-top: 16px;
 }  
-
 /* Instagram*/
-
 .ig-container {
     justify-content: center;
     margin-bottom: 90px;
     height: auto;
 }
-
 footer {
     color: #a4a5a5;
 }
-
 footer i{
     color: #6babae;
 }
