@@ -356,7 +356,7 @@ main .bounceMap {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 2%; /*20px*/
+    bottom: 5%; /*20px*/
     right: 2%; /*15px*/
     background-color: #25d366;
     color: #FFF;

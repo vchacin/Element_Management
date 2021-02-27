@@ -23,71 +23,61 @@
     </div>
 
     <div id="wrapper-contenido" style="display: none;">
-        
         <header class="bg-img h-screen relative flex flex-wrap justify-end pt-2 w-full">
-
             <nav class="flex items-center justify-end flex-wrap w-full h-12 py-2 focus:outline-none fixed z-50">
-        
                 <div class="block lg:hidden focus:outline-none">
                     <button id="nav-toggle" class="flex items-center px-3 py-2 text-gray-500 focus:outline-none">
                         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                     </button>
                 </div>
-                
                 <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block" id="nav-content">
                     <ul class="list-reset flex-col lg:flex-row justify-end flex-1 items-end lg:items-center text-gray-500 text-sm">
                         <li>
-                            <a href="#inicio" class="js-scroll-trigger hover:text-white transition duration-500">Inicio</a>
+                            <a href="#inicio" id="hnav1" class="js-scroll-trigger hover:text-white transition duration-500">Inicio</a>
                         </li>
                         <li>
-                            <a href="#nosotros" class="js-scroll-trigger hover:text-white transition duration-500">Nosotros</a>
+                            <a href="#nosotros" id="hnav2" class="js-scroll-trigger hover:text-white transition duration-500">Nosotros</a>
                         </li>
                         <li>
-                            <a href="#services" class="js-scroll-trigger hover:text-white transition duration-500">Servicios</a>
+                            <a href="#services" id="hnav3" class="js-scroll-trigger hover:text-white transition duration-500">Servicios</a>
                         </li>
                         <li>
-                            <a href="#location" class="js-scroll-trigger hover:text-white transition duration-500">Ubicación</a>
+                            <a href="#location" id="hnav4" class="js-scroll-trigger hover:text-white transition duration-500">Ubicación</a>
                         </li>
                         <li>
-                            <a href="#contact" class="js-scroll-trigger btn-contacto">Contacto</a>
+                            <a href="#contact" id="hnav5" class="js-scroll-trigger btn-contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
-                
             </nav>
     
             <div id="inicio" class="text-left flex justify-center md:justify-start h-80 md:h-4/5 lg:h-3/5 w-full mt-32 md:mt-24 lg:mt-24 mb-96 lg:mb-2 px-8 lg:px-24">
                 <div class="w-full flex flex-col items-center md:items-start">
                     <a href="#nosotros" class="js-scroll-trigger hover:text-white transition duration-500"><img src="images/Logo.png" class="logo inline w-full md:w-80" alt="logo-empresa"></a>
-                    <p class="w-2/3 lg:w-2/5 text-center md:text-left lg:pl-6 text-xs md:text-lg lg:text-2xl uppercase leading-4 md:leading-24 font-normal tracking-widest text-gray-500">Cuidamos cada elemento <br/> de tu patrimonio</p>
+                    <p id="hdiv1" class="w-2/3 lg:w-2/5 text-center md:text-left lg:pl-6 text-xs md:text-lg lg:text-2xl uppercase leading-4 md:leading-24 font-normal tracking-widest text-gray-500">Cuidamos cada elemento <br/> de tu patrimonio</p>
                     <div class="lang flex flex-row w-2/3 lg:w-2/5 justify-center md:justify-start text-center md:text-left lg:pl-6 text-xs md:text-lg lg:text-2xl uppercase leading-4 md:leading-24 font-semibold tracking-widest pt-2">
-                        <p>ESP</p>
+                        <p onclick="translateText('es')" class="cursor-pointer">ESP</p>
                         <h5 class="px-4 text-gray-500">|</h5>
-                        <p>ENG</p>
+                        <p onclick="translateText('en')" class="cursor-pointer">ENG</p>
                     </div>
                 </div>
             </div>
-    
             <div class="w-full text-center flex justify-center absolute bottom-0 items-center">
                 <a href="#nosotros" class="">
                     <i class="fas fa-chevron-down animate-bounce fa-2x md-48 delay-150 text-white"></i>
                 </a>
             </div>
-    
         </header> 
-    
         <main>
-    
             <div class="view1 flex flex-wrap">
-    
                 <section id="nosotros" class="w-full h-auto lg:h-screen py-28 lg:py-16 px-8 lg:px-24">
                     <div class="w-full h-auto lg:h-full flex flex-wrap font-normal tracking-widest">
                         <div class="w-full lg:w-1/6 h-full pb-8 font-bold text-left lg:text-right anima_up">
-                            <h2 class="text-lg lg:text-xl pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25 px-4">SOBRE NOSOTROS</h2>
+                            <h2 id="mnosotros1" class="text-lg lg:text-xl pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25 px-4">SOBRE NOSOTROS</h2>
                         </div>
                         <div class="w-1/3 lg:w-2/6 h-full anima_right"><img src="images/bg-1.png" class="w-full h-auto lg:h-4/5 px-4 lg:px-8 coloriza" alt="Area comun"></div>
                         <div class="w-2/3 lg:w-3/6 h-full anima_right">
-                            <div class="w-full h-full text-xs md:text-sm lg:text-md">
+                            <div id="mnosotros2" class="w-full h-full text-xs md:text-sm lg:text-md">
                                 SOMOS UNA EMPRESA ESPECIALIZADA EN LA 
                                 <span class="font-bold">
                                     ADMINISTRACIÓN PROFESIONAL E INTEGRAL DE CONDOMINIOS
@@ -97,234 +87,203 @@
                         </div>
                     </div> 
                 </section> 
-    
                 <section id="quote" class="bg-quote w-full h-96 lg:h-screen py-8 lg:py-16 px-8 lg:px-24">
-    
                         <div class="w-full flex flex-wrap anima_right">
                             <div class="w-full lg:w-1/2 h-full">
                                 <img class="w-12 md:w-16 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple">
-                                <p class="w-full text-white text-left leading-2 md:leading-24 font-light tracking-widest text-sm md:text-xl lg:text-2xl">UNA BUENA ADMINISTRACIÓN ES IGUAL A <span class="font-semibold">UN INMUEBLE EN OPTIMAS CONDICIONES CON ALTA PLUSVALÍA</span></p>
+                                <p id="mquote1" class="w-full text-white text-left leading-2 md:leading-24 font-light tracking-widest text-sm md:text-xl lg:text-2xl">UNA BUENA ADMINISTRACIÓN ES IGUAL A <span class="font-semibold">UN INMUEBLE EN OPTIMAS CONDICIONES CON ALTA PLUSVALÍA</span></p>
                             </div>
                         </div>
-    
                 </section> 
-    
                 <section id="services" class="w-full h-auto lg:h-screen py-28 lg:py-16 px-8 lg:px-24">
-
                     <div class="w-full h-auto flex flex-wrap justify-around leading-20 font-medium tracking-widest px-4">
-
                         <div class="w-full lg:w-1/6 h-full pb-8 font-bold text-left lg:text-right anima_up">
-                            <h2 class="text-lg lg:text-xl pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">SERVICIOS</h2>
+                            <h2 id="mservicios1" class="text-lg lg:text-xl pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">SERVICIOS</h2>
                         </div>
-                        
                         <div class="w-full lg:w-5/6 h-full flex text-left flex-row flex-wrap text-left uppercase lg:px-8">
-                            
                             <div class="w-full md:w-1/2 h-auto anima_up">
-    
                                 <div class="w-full h-auto flex content-center items-center">
                                     <div class="w-12 lg:w-16 h-12 lg:h-16 px-2">
                                         <img class="w-12 md:w-20" src="images/expert.png" alt="expertos">
                                     </div>
-                                    <h3 class="font-bold text-sm lg:text-base px-2">EXPERTOS EN ADMINISTRACIÓN</h3>
+                                    <h3 id="mservicios2" class="font-bold text-sm lg:text-base px-2">EXPERTOS EN ADMINISTRACIÓN</h3>
                                 </div>
-    
                                 <div class="w-5/6 lg:w-4/6 h-auto text-xs divide-y divide-light-gray-400 ml-12 lg:ml-20 mb-4 md:mb-6">
-                                    <p class="p-2">Talento y capital humano</p>
-                                    <p class="p-2">Gestión económica eficaz</p>
-                                    <p class="p-2">Generación de valor y calidad</p>
-                                    <p class="p-2">Planificación, dirección y control</p>
+                                    <p id="mservicios3" class="p-2">Talento y capital humano</p>
+                                    <p id="mservicios4" class="p-2">Gestión económica eficaz</p>
+                                    <p id="mservicios5" class="p-2">Generación de valor y calidad</p>
+                                    <p id="mservicios6" class="p-2">Planificación, dirección y control</p>
                                 </div>
-                            
                             </div>
-
                             <div class="w-full md:w-1/2 h-auto anima_up">
-    
                                 <div class="w-full h-auto flex content-center items-center">
                                     <div class="w-12 lg:w-16 h-12 lg:h-16 px-2">
                                         <img class="w-12 md:w-20" src="images/tecnologia.png" alt="expertos">
                                     </div>
-                                    <h3 class="font-bold text-sm lg:text-base px-2">TECNOLOGÍA AVANZADA</h3>
+                                    <h3 id="mservicios7" class="font-bold text-sm lg:text-base px-2">TECNOLOGÍA AVANZADA</h3>
                                 </div>
-    
                                 <div class="w-5/6 lg:w-4/6 h-auto text-xs divide-y divide-light-gray-400 ml-12 lg:ml-20 mb-4 md:mb-6 p-2">
-                                    <p class="p-2">Procesos eficientes</p>
-                                    <p class="p-2">Seguridad y transparencia</p>
-                                    <p class="p-2">Técnicas innovadoras</p>
-                                    <p class="p-2">Buen manejo de ingresos</p>
+                                    <p id="mservicios8" class="p-2">Procesos eficientes</p>
+                                    <p id="mservicios9" class="p-2">Seguridad y transparencia</p>
+                                    <p id="mservicios10" class="p-2">Técnicas innovadoras</p>
+                                    <p id="mservicios11" class="p-2">Buen manejo de ingresos</p>
                                 </div>
-    
                             </div>
-    
                             <div class="w-full md:w-1/2 h-auto anima_up">
-    
                                 <div class="w-full h-auto flex content-center items-center">
                                     <div class="w-12 lg:w-16 h-12 lg:h-16 px-2">
                                         <img class="w-12 md:w-20" src="images/tech.png" alt="soporte tecnico">
                                     </div>
-                                    <h3 class="font-bold text-sm lg:text-base px-2">SOPORTE 24/7</h3>
+                                    <h3 id="mservicios12" class="font-bold text-sm lg:text-base px-2">SOPORTE 24/7</h3>
                                 </div>
-    
                                 <div class="w-5/6 lg:w-4/6 h-auto text-xs divide-y divide-light-gray-400 ml-12 lg:ml-20 mb-4">
-                                    <p class="p-2">Atención personalizada</p>
-                                    <p class="p-2">Solucionamos problemas</p>
+                                    <p id="mservicios13" class="p-2">Atención personalizada</p>
+                                    <p id="mservicios14" class="p-2">Solucionamos problemas</p>
                                         <ul class="font-bold divide-y divide-light-gray-200">
-                                            <li><i class="fas fa-check px-2"></i>Operativos</li>
-                                            <li><i class="fas fa-check px-2"></i>Administrativos</li>
-                                            <li><i class="fas fa-check px-2"></i>Conflictos</li>
-                                            <li><i class="fas fa-check px-2"></i>Difusión de Información</li>
-                                            <li><i class="fas fa-check px-2"></i>Supervisión del Inmueble</li>
-                                            <li><i class="fas fa-check px-2"></i>Reparación de Componentes</li>
+                                            <li id="mservicios15"><i class="fas fa-check px-2"></i>Operativos</li>
+                                            <li id="mservicios16"><i class="fas fa-check px-2"></i>Administrativos</li>
+                                            <li id="mservicios17"><i class="fas fa-check px-2"></i>Conflictos</li>
+                                            <li id="mservicios18"><i class="fas fa-check px-2"></i>Difusión de Información</li>
+                                            <li id="mservicios19"><i class="fas fa-check px-2"></i>Supervisión del Inmueble</li>
+                                            <li id="mservicios20"><i class="fas fa-check px-2"></i>Reparación de Componentes</li>
                                         </ul>
                                 </div>
-    
                             </div>
-    
                             <div class="w-full md:w-1/2 h-auto anima_up">
-    
                                 <div class="w-full h-auto flex content-center items-center">
                                     <div class="w-12 lg:w-16 h-12 lg:h-16 px-2">
                                         <img class="w-12 md:w-20" src="images/team.png" alt="equipo">
                                     </div>
-                                    <h3 class="font-bold text-sm lg:text-base px-2">PROVEEDORES EXPERTOS</h3>
+                                    <h3 id="mservicios21" class="font-bold text-sm lg:text-base px-2">PROVEEDORES EXPERTOS</h3>
                                 </div>
-    
                                 <div class="w-5/6 lg:w-4/6 h-auto text-xs divide-y divide-light-gray-400 ml-12 lg:ml-20 mb-4">
-                                    <p class="p-2">Trabajo en equipo</p>
-                                    <p class="p-2">Alianzas profesionales</p>
-                                    <p class="p-2">Talento local</p>
+                                    <p id="mservicios22" class="p-2">Trabajo en equipo</p>
+                                    <p id="mservicios23" class="p-2">Alianzas profesionales</p>
+                                    <p id="mservicios24" class="p-2">Talento local</p>
                                 </div>
-    
                             </div>
                         </div>
-                    </div> 
-
+                    </div>
                 </section>
-    
                 <section id="mision" class="w-full h-auto lg:h-screen py-28 lg:py-16 px-8 lg:px-24">
-    
                     <div class="w-full h-auto flex flex-wrap leading-20 font-normal tracking-widest px-4 pb-8 anima_up">
-                        <div class="w-full md:w-1/6 h-full pb-8 font-bold text-left lg:text-right"><h2 class="text-lg lg:text-xl lg:pr-4 border-r-8 border-white border-opacity-0 lg:border-opacity-25">MISIÓN</h2></div>
+                        <div class="w-full md:w-1/6 h-full pb-8 font-bold text-left lg:text-right"><h2 id="mmision1" class="text-lg lg:text-xl lg:pr-4 border-r-8 border-white border-opacity-0 lg:border-opacity-25">MISIÓN</h2></div>
                         <div class="w-full md:w-2/6 h-full mb-4"><img src="images/mision.png" class="md:px-8 coloriza" alt="Area comun"></div>
                         <div class="w-full md:w-3/6 h-full">
                             <div class="w-full h-full text-xs md:text-sm lg:text-md text-lef flex">
-                                <p class="pr-2">SER LA EMPRESA LÍDER DE LA REGIÓN, RECONOCIDA POR NUESTRO SERVICIO DE ALTA CALIDAD Y TECNOLOGÍA APLICADA AL DESARROLLO COTIDIANO DE LA PROPIEDAD CON SEGUIMIENTO PERSONALIZADO DE CADA PROPIETARIO O ADMINISTRADOR, ASEGURANDO SU PATRIMONIO Y SATISFACCIÓN GLOBAL.</p>
-                                <p class="font-bold text-white">GUIADA POR LA TRANSPARENCIA, INTEGRIDAD, SOLIDARIDAD, RESPONSABILIDAD Y SEGURIDAD SOCIAL.</p>
+                                <p id="mmision2" class="pr-2 text-left">SER LA EMPRESA LÍDER DE LA REGIÓN, RECONOCIDA POR NUESTRO SERVICIO DE ALTA CALIDAD Y TECNOLOGÍA APLICADA AL DESARROLLO COTIDIANO DE LA PROPIEDAD CON SEGUIMIENTO PERSONALIZADO DE CADA PROPIETARIO O ADMINISTRADOR, ASEGURANDO SU PATRIMONIO Y SATISFACCIÓN GLOBAL.</p>
+                                <p id="mmision3" class="font-bold text-white text-left">GUIADA POR LA TRANSPARENCIA, INTEGRIDAD, SOLIDARIDAD, RESPONSABILIDAD Y SEGURIDAD SOCIAL.</p>
                             </div>
                         </div>
                     </div> 
-    
                     <div class="w-full h-auto flex flex-wrap leading-20 font-normal tracking-widest px-4 anima_up">
-                        <div class="w-full md:w-1/6 h-full pb-8 font-bold text-left lg:text-right"><h2 class="text-lg lg:text-xl lg:pr-4 border-r-8 border-white border-opacity-0 lg:border-opacity-25">VISIÓN</h2></div>
+                        <div class="w-full md:w-1/6 h-full pb-8 font-bold text-left lg:text-right"><h2 id="mmision4" class="text-lg lg:text-xl lg:pr-4 border-r-8 border-white border-opacity-0 lg:border-opacity-25">VISIÓN</h2></div>
                         <div class="w-full md:w-2/6 h-full mb-4"><img src="images/vision.png" class="md:px-8 coloriza" alt="Area comun"></div>
                         <div class="w-full md:w-3/6 h-full">
                             <div class="w-full h-full text-xs md:text-sm lg:text-md text-lef flex">
-                                <p class="font-bold text-white pr-2">LIDERAR EL MERCADO DE LA ADMINISTRACIÓN CONDO-HOTELERA EN LA REGIÓN POR NUESTROS PROCESOS TECNOLÓGICOS, TRANSPARENTES Y EFECTIVOS.</p>
-                                <p class="">GARANTIZANDO UN SERVICIO ÓPTIMO EN CADA ELEMENTO DEL INMUEBLE DE NUESTROS CLIENTES.</p>
+                                <p id="mmision5" class="font-bold text-white pr-2 text-left">LIDERAR EL MERCADO DE LA ADMINISTRACIÓN CONDO-HOTELERA EN LA REGIÓN POR NUESTROS PROCESOS TECNOLÓGICOS, TRANSPARENTES Y EFECTIVOS.</p>
+                                <p id="mmision6" class="text-left">GARANTIZANDO UN SERVICIO ÓPTIMO EN CADA ELEMENTO DEL INMUEBLE DE NUESTROS CLIENTES.</p>
                             </div>
                         </div>
                     </div> 
-    
                 </section> 
-    
                 <section id="esquema" class="w-full h-auto lg:h-screen py-28 lg:py-16 px-8 lg:px-24">
                     <div class="w-full h-auto flex flex-wrap justify-around leading-20 font-normal tracking-wide px-4">
-                        <div class="w-full md:w-1/6 h-full pb-8 font-bold text-left lg:text-right anima_up"><h2 class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25"> NUESTRO MÉTODO</h2></div>
+                        <div class="w-full md:w-1/6 h-full pb-8 font-bold text-left lg:text-right anima_up"><h2 id="mesquema1" class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25"> NUESTRO MÉTODO</h2></div>
                         <div class="w-full md:w-5/6 h-full flex flex-wrap lg:flex-nowrap justify-between text-left lg:px-8">
                             <div class="w-1/2 md:w-1/4 h-2/3 pr-2 anima_right"> 
                                 <div class="w-full h-auto mb-4">
                                     <img class="coloriza shadow-lg" src="/images/condo.png" alt="Condominio">
                                     <h4 class="text-3xl font-bold opacity-50 absolute">01</h4>
-                                    <h3 class="py-6 ml-4 font-bold text-sm lg:text-base">ANÁLISIS</h3>
-                                    <p class="font-medium text-xs md:text-sm lg:text-md">NECESIDADES, FORTALEZAS Y OPORTUNIDADES.</p>
+                                    <h3 id="mesquema2" class="py-6 ml-4 font-bold text-sm lg:text-base">ANÁLISIS</h3>
+                                    <p id="mesquema3" class="font-medium text-xs md:text-sm lg:text-md">NECESIDADES, FORTALEZAS Y OPORTUNIDADES.</p>
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-1/4 h-2/3 pr-2 anima_right">
                                 <div class="w-full h-auto mb-4">
                                     <img class="coloriza shadow-lg" src="/images/propuesta.png" alt="Ideacion de propuesta">
                                     <h4 class="text-3xl font-bold opacity-50 absolute">02</h4>
-                                    <h3 class="py-6 ml-4 font-bold text-sm lg:text-base">PROPUESTA</h3>
-                                    <p class="font-medium text-xs md:text-sm lg:text-md">“NO SON SOLO NÚMEROS, HAY QUE DARLES VALOR”.</p>
+                                    <h3 id="mesquema4" class="py-6 ml-4 font-bold text-sm lg:text-base">PROPUESTA</h3>
+                                    <p id="mesquema5" class="font-medium text-xs md:text-sm lg:text-md">“NO SON SOLO NÚMEROS, HAY QUE DARLES VALOR”.</p>
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-1/4 h-2/3 pr-2 anima_right">
                                 <div class="w-full h-auto mb-4">
                                     <img class="coloriza shadow-lg" src="/images/implementacion.png" alt="Equipo de desarrollo de propuesta">
                                     <h4 class="text-3xl font-bold opacity-50 absolute">03</h4>
-                                    <h3 class="py-6 ml-4 font-bold text-sm lg:text-base">APLICACIÓN</h3>
-                                    <p class="font-medium text-xs md:text-sm lg:text-md">PLAN DE ACCIÓN ACORDE AL CONDOMINIO.</p>
+                                    <h3 id="mesquema6" class="py-6 ml-4 font-bold text-sm lg:text-base">APLICACIÓN</h3>
+                                    <p id="mesquema7" class="font-medium text-xs md:text-sm lg:text-md">PLAN DE ACCIÓN ACORDE AL CONDOMINIO.</p>
                                 </div>
                             </div>
                             <div class="w-1/2 md:w-1/4 h-2/3 pr-2 anima_right">
                                 <div class="w-full h-auto mb-4">
                                     <img class="coloriza shadow-lg" src="/images/residentes.png" alt="Familia de residentes en inmueble">
                                     <h4 class="text-3xl font-bold opacity-50 absolute">04</h4>
-                                    <h3 class="py-6 ml-4 font-bold text-sm lg:text-base">RESIDENTES</h3>
-                                    <p class="font-medium text-xs md:text-sm lg:text-md">BUENA COMUNICACIÓN Y SEGUIMIENTO.</p>
+                                    <h3 id="mesquema8" class="py-6 ml-4 font-bold text-sm lg:text-base">RESIDENTES</h3>
+                                    <p id="mesquema9" class="font-medium text-xs md:text-sm lg:text-md">BUENA COMUNICACIÓN Y SEGUIMIENTO.</p>
                                 </div>
                             </div>
                         </div>
                     </div> 
                 </section> 
-
                 <section id="benefits" class="bg-benefits w-full h-auto md:h-screen py-28 lg:py-16 px-8 lg:px-24">
                     <div class="w-full h-auto flex flex-wrap justify-around leading-20 font-normal tracking-wide lg:px-4 anima_up">
                         <div class="w-full lg:w-1/6 h-full pb-8 font-bold text-left lg:text-right px-4">
-                            <h2 class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">BENEFICIOS</h2>
+                            <h2 id="mbefeneficios1" class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">BENEFICIOS</h2>
                         </div>
                         <div class="w-full lg:w-5/6 h-full px-6 flex flex-wrap lg:flex-nowrap justify-between text-left">
                             <div class="w-full lg:w-1/3 lg:mr-4 bg-gray-100 bg-opacity-90 lg:bg-opacity-0 anima_right mb-2 pb-4 pr-2">
                                 <h4 class="text-9xl font-bold opacity-25 absolute">01</h4>
                                 <div class="pt-10 ml-8">
-                                    <h5 class="font-bold text-lg py-8 mr-4">SOLUCIONES INTEGRALES</h5>
-                                    <p class="font-bold lg:font-medium text-xs md:text-sm lg:text-md">ACCESO A LA INFORMACIÓN EN TIEMPO REAL Y SOLUCIÓN DE PROBLEMAS INMEDIATOS.</p>
+                                    <h5 id="mbefeneficios2" class="font-bold text-lg py-8 mr-4">SOLUCIONES INTEGRALES</h5>
+                                    <p id="mbefeneficios3" class="font-bold lg:font-medium text-xs md:text-sm lg:text-md">ACCESO A LA INFORMACIÓN EN TIEMPO REAL Y SOLUCIÓN DE PROBLEMAS INMEDIATOS.</p>
                                 </div>
                             </div>
                             <div class="w-full lg:w-1/3 lg:mr-4 bg-gray-100 bg-opacity-90 lg:bg-opacity-0 anima_right mb-2 pb-4 pr-2">
                                 <h4 class="text-9xl font-bold opacity-25 absolute">02</h4>
                                 <div class="pt-10 ml-8">
-                                    <h5 class="font-bold text-lg py-8 mr-4">CONTACTO Y ASESORIA</h5>
-                                    <p class="font-bold lg:font-medium text-xs md:text-sm lg:text-md">NÚMEROS DE CONTACTO DIRECTO A SU DISPOSICIÓN PARA EMERGENCIAS Y ASESORÍA LEGAL.</p>
+                                    <h5 id="mbefeneficios4" class="font-bold text-lg py-8 mr-4">CONTACTO Y ASESORIA</h5>
+                                    <p id="mbefeneficios5" class="font-bold lg:font-medium text-xs md:text-sm lg:text-md">NÚMEROS DE CONTACTO DIRECTO A SU DISPOSICIÓN PARA EMERGENCIAS Y ASESORÍA LEGAL.</p>
                                 </div>
                             </div>
                             <div class="w-full lg:w-1/3 bg-gray-100 bg-opacity-90 lg:bg-opacity-0 anima_right mb-2 pb-4 pr-2">
                                 <h4 class="text-9xl font-bold opacity-25 absolute">03</h4>
                                 <div class="pt-10 ml-8">
-                                    <h5 class="font-bold text-lg py-8 mr-4">ÓPTIMAS CONDICIONES</h5>
-                                    <p class="font-bold lg:font-medium text-xs md:text-sm lg:text-md">ENFOCADOS EN MANTENER EN ÓPTIMAS CONDICIONES LAS ÁREAS COMUNES Y AMENIDADES.</p>
+                                    <h5 id="mbefeneficios6" class="font-bold text-lg py-8 mr-4">ÓPTIMAS CONDICIONES</h5>
+                                    <p id="mbefeneficios7" class="font-bold lg:font-medium text-xs md:text-sm lg:text-md">ENFOCADOS EN MANTENER EN ÓPTIMAS CONDICIONES LAS ÁREAS COMUNES Y AMENIDADES.</p>
                                 </div>
                             </div>
                         </div>
                     </div> 
                 </section> 
-    
                 <section id="location" class="w-full h-auto md:h-screen py-14 lg:py-16 px-8 lg:px-24">
                     <div class="w-full h-auto flex flex-wrap font-normal tracking-widest relative anima_up">
                         <div class="w-full lg:w-1/6 h-full pb-8 font-bold text-left lg:text-right px-4">
-                            <h2 class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">UBICACIÓN</h2>
+                            <h2 id="mubicacion1" class="text-lg lg:text-xl lg:pr-4 border-r-8 border-black border-opacity-0 lg:border-opacity-25">UBICACIÓN</h2>
                         </div>
                         <div class="w-full lg:w-5/6 h-full px-6 lg:px-8 relative text-xs lg:text-base">
-                            ESTAMOS EN LA <span class="font-bold">RIVIERA MAYA, MÉXICO</span>
+                            <h4 id="mubicacion2">ESTAMOS EN LA <span class="font-bold">RIVIERA MAYA, MÉXICO</span></h4>
                             <img class="w-4/6" src="/images/map.png" alt="Ubicacion en Riviera Maya, Mexico">
                             <img class="bounceMap animate-ping absolute inset-2/3" src="images/bg-logo.png" alt="logo-simple">
                         </div>
                     </div> 
                 </section> 
-
                 <section id="contact" class="bg-contact w-full h-screen py-10 lg:py-18 px-8 lg:px-24">
     
                     <div class="w-full flex flex-wrap anima_up">
                         <div class="w-full lg:w-1/2 h-full">
                             <div class="w-full pb-4 flex">
                                 <img class="w-12 md:w-16 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple">
-                                <p class="w-full text-white text-left uppercase leading-4 md:leading-24 font-semibold tracking-widest text-xs md:text-xl lg:text-2xl">¿LISTO PARA EMPEZAR? <br/> LLÁMANOS Y MEJORA LA CALIDAD DE VIDA EN TU CONDOMINIO.</p>
+                                <p id="mcontacto1" class="w-full text-white text-left uppercase leading-4 md:leading-24 font-semibold tracking-widest text-xs md:text-xl lg:text-2xl">¿LISTO PARA EMPEZAR? <br/> LLÁMANOS Y MEJORA LA CALIDAD DE VIDA EN TU CONDOMINIO.</p>
                             </div>
                             
                             <div class="w-full">
-                                <form action="mailto:direccion@correo.com" method="post" enctype="text/plain">
+                                
+                                <form action="mailto:contacto@elementmanagement.mx" method="post" enctype="text/plain">
                                   <div class="bg-white bg-opacity-75 shadow-md px-8 py-2 flex flex-col text-gray-500">
                                     <div class="-mx-3 md:flex">
 
-                                      <div class="md:w-1/2 px-2">
+                                      <div id="mcontacto2" class="md:w-1/2 px-2">
                                         <label class="tracking-wide text-xs font-bold mb-2" for="name">
                                           NOMBRE
                                         </label>
@@ -332,7 +291,7 @@
                                       </div>
 
                                       <div class="md:w-1/2 px-2">
-                                        <label class="tracking-wide text-xs font-bold mb-2" for="phone">
+                                        <label id="mcontacto3" class="tracking-wide text-xs font-bold mb-2" for="phone">
                                           TELÉFONO
                                         </label>
                                         <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="phone" type="text" placeholder="00 0000 000">
@@ -341,7 +300,7 @@
                                     </div>
 
                                     <div class="-mx-3 md:flex px-2">
-                                      <div class="md:w-full">
+                                      <div id="mcontacto4" class="md:w-full">
                                         <label class="tracking-wide text-xs font-bold mb-2" for="email">
                                           EMAIL
                                         </label>
@@ -351,21 +310,20 @@
 
                                     <div class="-mx-3 md:flex">
                                       <div class="md:w-1/2 px-2">
-                                        <label class="tracking-wide text-xs font-bold" for="hab">
+                                        <label id="mcontacto5" class="tracking-wide text-xs font-bold" for="hab">
                                           UNIDADES HABITACIONALES
                                         </label>
                                         <div>
                                           <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-2" id="hab">
-                                            <option></option>
                                             <option>1 - 10</option>
                                             <option>10 - 30</option>
-                                            <option>30 o más</option>
+                                            <option id="mcontacto6" >30 o más</option>
                                           </select>
                                         </div>
                                       </div>
 
                                       <div class="md:w-1/2 px-2">
-                                        <label class="tracking-wide text-xs font-bold" for="city">
+                                        <label id="mcontacto7" class="tracking-wide text-xs font-bold" for="city">
                                           CIUDAD
                                         </label>
                                         <div>
@@ -379,12 +337,12 @@
                                     </div>
 
                                     <div class="-mx-3 md:flex mb-2 px-2">
-                                        <div class="md:w-full mb-2 md:mb-0">
-                                          <label class="tracking-wide text-xs font-bold mb-2" for="hab">
+                                        <div id="mcontacto8" class="md:w-full mb-2 md:mb-0">
+                                          <label class="tracking-wide text-xs font-bold mb-2" for="coment">
                                             COMENTARIO
                                           </label>
                                           <div>
-                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="comentario" type="text" placeholder="Déjanos algún comentario">
+                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="comentario" placeholder="Déjanos algún comentario">
                                             </textarea>
                                           </div>
                                         </div>
@@ -394,7 +352,7 @@
 
                                     <div class="-mx-3 md:flex mt-2 px-2">
                                       <div class="w-full">
-                                        <button class="btn-btn w-full text-white font-bold px-4 py-2">
+                                        <button id="mcontacto9" class="btn-btn w-full text-white font-bold px-4 py-2">
                                           ENVIAR
                                         </button>
                                       </div>
@@ -407,16 +365,11 @@
                     </div>
 
                 </section>
-    
-    
             </div>
-    
             <a  class="whats-app" href="https://api.whatsapp.com/send?phone=529841187711&text=Quisiera%20consultar%20más%20información%20sobre%20sus%20servicios.&app_absent=0" target="_blank">
                 <i class="fab fa-whatsapp my-float"></i>
             </a>
-    
         </main>
-    
         <footer class="w-full h-auto py-4 md:py-8 px-8 lg:px-24 flex flex-col text-left text-sm">
     
             <div class="w-full flex flex-row flex-wrap">
@@ -425,14 +378,18 @@
                 </div>
                 <div class="w-5/6 h-18 flex flex-col">
                     <a href="" class="transition duration-500 ease-in-out transform hover:text-gray-900">Contacto@elementmanagement.mx</a>
-                    <a href="https://api.whatsapp.com/send?phone=529841187711" class="transition duration-500 ease-in-out transform hover:text-gray-900">+52 9841881139</a>
+                    <a href="https://api.whatsapp.com/send?phone=529841187711&text=Quisiera%20consultar%20más%20información%20sobre%20sus%20servicios.&app_absent=0" class="transition duration-500 ease-in-out transform hover:text-gray-900">+52 9841881139</a>
                 </div>
                 <div class="w-1/6 h-10 lg:h-8 flex">
-                    <a href="https://www.facebook.com/elementmgmt" target="_blank"><i class="fab fa-facebook-f fa-lg lg:m-2 transition duration-500 ease-in-out transform hover:text-gray-900"></i></a>
-                    <a href="https://www.instagram.com/elementmgmt/" target="_blank"><i class="fab fa-instagram fa-lg mx-4 lg:m-2 transition duration-500 ease-in-out transform hover:text-gray-900"></i></a>
+                    <a href="https://www.facebook.com/elementmgmt" target="_blank">
+                        <i class="fab fa-facebook-square fa-lg lg:m-2 transition duration-500 ease-in-out transform hover:text-gray-900"></i>
+                    </a>
+                    <a href="https://www.instagram.com/elementmgmt/" target="_blank">
+                        <i class="fab fa-instagram fa-lg mx-4 lg:m-2 transition duration-500 ease-in-out transform hover:text-gray-900"></i>
+                    </a>
                 </div>
                 <div class="w-2/6 md:w-1/6 h-10 lg:h-8 flex transition duration-500 ease-in-out transform hover:text-gray-900">
-                    <a href="">Privacidad</a>
+                    <a href="" id="fprivacidad1">Privacidad</a> <!--LINKEAR-->
                 </div>
                 <div class="w-3/6 md:w-4/6 h-10 lg:h-8 flex">
                     
@@ -447,7 +404,7 @@
     
         </footer>
     </div>
-
+    
     <script>
 		document.getElementById('nav-toggle').onclick = function(){
 			document.getElementById("nav-content").classList.toggle("hidden");
@@ -457,7 +414,7 @@
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/jquery.easeing.min.js"></script>
     <script src="scripts/init.js"></script>
+    <script src="scripts/lang.js"></script>
     <script src="scripts/idx.js"></script>
-
 </body>
 </html>
