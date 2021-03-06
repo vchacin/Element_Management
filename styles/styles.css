@@ -4,9 +4,8 @@ body {
     outline: none;
 }
 header nav {
-    margin: 0 20px 10px;
-    display: flex;
-    justify-content: flex-end;
+    padding: 5% 2%;
+    margin-top: 10px;
     color: #a4a5a5;
 }
 header nav ul {
@@ -44,6 +43,10 @@ header nav ul a:after {
 header nav ul a:hover:after { 
     width: 100%; 
     left: 0; 
+}
+div.lang img {
+    width: 20px;
+    height: 20px;
 }
 .btn-contacto {
     padding: 10px 20px;
@@ -151,11 +154,11 @@ main section h3 span {
 main .cuadradito {
     background-color: #6babae;
 }
-main .coloriza {
+.coloriza {
     filter: saturate(10%);
     transition: filter 1s ease-out;
 }
-main .coloriza:hover {
+.coloriza:hover {
     filter: saturate(100%);
     animation: crescendo 1s ease;
     animation-fill-mode: forwards;  
