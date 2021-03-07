@@ -205,6 +205,11 @@ function translateText(language) {
         mainContact9 = LANG.MAIN.CONTACT.TEXT9.ES;
         footer1 = LANG.FOOTER.TEXT1.ES; 
     }
+
+    let pressedLang = document.querySelector("#"+language);
+    let idiomasDisponibles = document.querySelectorAll(".languageOp");
+    idiomasDisponibles.forEach(el => el.classList.add("coloriza"));
+    pressedLang.classList.remove("coloriza");
         
     $("#hnav1").html(headerNav1);
     $("#hnav2").html(headerNav2);
