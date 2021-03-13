@@ -289,8 +289,8 @@ const LANG = {
     },
     FOOTER: {
         TEXT1: {
-            ES: "Privacidad",
-            EN: "Privacy"
+            ES: "<a href='legal-es.html'>Privacidad</a>",
+            EN: "<a href='legal-en.html'>Privacy</a>"
         }
     }
 }
