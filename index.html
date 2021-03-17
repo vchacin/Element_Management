@@ -298,7 +298,7 @@
                             
                             <div class="w-full">
                                 
-                                <form method="POST" accept="enviar.php">
+                                <form method="POST" action="mailto:contacto@elementmanagement.mx&subject=Contacto" enctype="text/plain">
                                   <div class="bg-white bg-opacity-75 shadow-md px-8 py-2 flex flex-col text-gray-500">
 
                                     <div class="-mx-3 md:flex">  
@@ -322,7 +322,7 @@
                                         <label class="tracking-wide text-xs font-bold mb-2" for="email">
                                           EMAIL
                                         </label>
-                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2" id="email" name="email" type="email" placeholder="Ingresa tu email" required>
+                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="email" name="email" type="email" placeholder="Ingresa tu email" required>
                                       </div>
                                     </div>
 
@@ -332,7 +332,7 @@
                                           UNIDADES HABITACIONALES
                                         </label>
                                         <div>
-                                          <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-2" id="hab" required>
+                                          <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-3" id="hab" required>
                                             <option>1 - 10</option>
                                             <option>10 - 30</option>
                                             <option id="mcontacto6" >30 o más</option>
@@ -348,18 +348,17 @@
                                     </div>
 
                                     <div class="-mx-3 md:flex mb-2 px-2">
-                                        <div id="mcontacto8" class="md:w-full mb-2 md:mb-0">
+                                        <div id="mcontacto8" class="md:w-full mb-2">
                                           <label class="tracking-wide text-xs font-bold mb-2" for="message">
                                             COMENTARIO
                                           </label>
                                           <div>
-                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="message" name="message" type="text" placeholder="Déjanos algún comentario">
-                                            </textarea>
+                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="message" name="message" type="text" placeholder="Déjanos algún comentario"></textarea>
                                           </div>
                                         </div>
                                     </div>
 
-                                    <div class="-mx-3 md:flex mt-2 px-2">
+                                    <div class="-mx-3 md:flex mb-2 px-2">
                                       <div class="w-full">
                                         <button id="mcontacto9" class="btn-btn w-full text-white font-bold px-4 py-2" type="submit">
                                           ENVIAR

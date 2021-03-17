@@ -253,6 +253,7 @@ main section .btn-btn {
     background-color: #6babae;
     border: 2px solid #6babae;
     outline: none;
+    transition: all 1s ease-out;
 }
 main section .btn-btn:hover {
     background-color: #fff;
