@@ -14,8 +14,27 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon"> 
     <title>Privacy | Element Management</title>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '371621200496045'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=371621200496045&ev=PageView
+        &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
-<body class="p-6">
+<body>
     <header class="text-black">
         <div class="top-border"></div>
         <div class="pt-5 md:pt-10 px-10 md:px-16 lg:px-24">
@@ -55,11 +74,11 @@
         <p>This privacy notice may be modified by Element Management, said modifications will be duly informed through email, telephone, website or any other means of communication that Element Management determines for such effect.</p>
     </main>
 
-    <footer class="w-full h-auto py-2 md:py-8 px-8 lg:px-24 flex flex-col text-left text-sm">
+    <footer class="w-full bg-gray-200 h-auto py-2 md:py-8 px-8 lg:px-24 flex flex-col text-left text-sm">
     
         <div class="w-full flex flex-row flex-wrap">
             <div class="w-1/6 h-18 flex flex-col">
-                <img class="w-12 md:w-14 lg:w-18 pb-4" src="images/bg-logo.png" alt="logo-simple">
+                <a href="https://www.facebook.com/elementmgmt" target="_blank"><img class="w-12 md:w-14 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple"></a>
             </div>
             <div class="w-5/6 h-18 flex flex-col pl-4">
                 <a href="" class="transition duration-500 ease-in-out transform hover:text-gray-900">Contacto@elementmanagement.mx</a>
@@ -71,6 +90,9 @@
                 </a>
                 <a href="https://www.instagram.com/elementmgmt/" target="_blank">
                     <i class="fab fa-instagram fa-lg mx-4 lg:m-2 transition duration-500 ease-in-out transform hover:text-gray-900"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/element-mgmt" target="_blank">
+                    <i class="fab fa-linkedin fa-lg mx-4 lg:m-2 transition duration-500 ease-in-out transform hover:text-gray-900"></i>
                 </a>
             </div>
             <div class="w-5/6 md:w-4/6 h-10 lg:h-8 flex flex-col py-2 pl-4">

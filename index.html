@@ -14,6 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Element Management</title>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '371621200496045'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=371621200496045&ev=PageView
+        &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -89,7 +108,7 @@
                 <section id="quote" class="bg-quote w-full h-96 lg:h-screen py-8 lg:py-16 px-8 lg:px-24">
                         <div class="w-full flex flex-wrap anima_right">
                             <div class="w-full lg:w-1/2 h-full">
-                                <img class="w-12 md:w-16 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple">
+                                <a href="https://www.facebook.com/elementmgmt" target="_blank"><img class="w-12 md:w-16 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple"></a>
                                 <p id="mquote1" class="w-full text-white text-left leading-2 md:leading-24 font-light tracking-widest text-sm md:text-xl lg:text-2xl">
                                     UNA BUENA ADMINISTRACIÓN, ES IGUAL A <span class="font-semibold">UN INMUEBLE EN ÓPTIMAS CONDICIONES CON ALTA PLUSVALÍA</span></p>
                             </div>
@@ -263,7 +282,7 @@
                         </div>
                         <div class="w-full lg:w-5/6 h-full px-6 lg:px-8 relative text-xs lg:text-base anima_right">
                             <h4 id="mubicacion2">NOS ENCONTRAMOS EN LA <span class="font-bold">RIVIERA MAYA, MÉXICO</span></h4>
-                            <img class="w-4/6" src="/images/map.png" alt="Ubicacion en Riviera Maya, Mexico">
+                            <a href="https://www.facebook.com/elementmgmt" target="_blank"><img class="w-4/6" src="/images/map.png" alt="Ubicacion en Riviera Maya, Mexico"></a>
                             <img class="bounceMap animate-ping absolute inset-2/3" src="images/bg-logo.png" alt="logo-simple">
                         </div>
                     </div> 
@@ -273,30 +292,29 @@
                     <div class="w-full flex flex-wrap anima_up">
                         <div class="w-full lg:w-1/2 h-full">
                             <div class="w-full pb-4 flex">
-                                <img class="w-12 md:w-16 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple">
+                                <a href="https://www.facebook.com/elementmgmt" target="_blank"><img class="w-12 md:w-16 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple"></a>
                                 <p id="mcontacto1" class="w-full text-white text-left uppercase leading-4 md:leading-24 font-semibold tracking-widest text-xs md:text-xl lg:text-2xl">¿LISTO PARA EMPEZAR? <br/> LLÁMANOS Y MEJORA LA CALIDAD DE VIDA EN TU CONDOMINIO.</p>
                             </div>
                             
                             <div class="w-full">
                                 
-                                <form action="mailto:contacto@elementmanagement.mx" method="post" enctype="text/plain">
+                                <form>
                                   <div class="bg-white bg-opacity-75 shadow-md px-8 py-2 flex flex-col text-gray-500">
-                                    <div class="-mx-3 md:flex">
 
+                                    <div class="-mx-3 md:flex">  
                                       <div id="mcontacto2" class="md:w-1/2 px-2">
                                         <label class="tracking-wide text-xs font-bold mb-2" for="name">
                                           NOMBRE
                                         </label>
-                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="name" type="text" placeholder="Ingresa tu nombre">
+                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="name" name="name" type="text" placeholder="Ingresa tu nombre" required>
                                       </div>
 
                                       <div class="md:w-1/2 px-2">
                                         <label id="mcontacto3" class="tracking-wide text-xs font-bold mb-2" for="phone">
                                           TELÉFONO
                                         </label>
-                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="phone" type="text" placeholder="00 0000 000">
+                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="phone" name="phone" type="text" placeholder="00 0000 000" required>
                                       </div>
-
                                     </div>
 
                                     <div class="-mx-3 md:flex px-2">
@@ -304,7 +322,7 @@
                                         <label class="tracking-wide text-xs font-bold mb-2" for="email">
                                           EMAIL
                                         </label>
-                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2" id="email" type="email" placeholder="Ingresa tu email">
+                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2" id="email" name="email" type="email" placeholder="Ingresa tu email" required>
                                       </div>
                                     </div>
 
@@ -314,39 +332,36 @@
                                           UNIDADES HABITACIONALES
                                         </label>
                                         <div>
-                                          <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-2" id="hab">
+                                          <select class="w-full bg-gray-200 border border-gray-200 text-xs px-4 py-2" id="hab" required>
                                             <option>1 - 10</option>
                                             <option>10 - 30</option>
                                             <option id="mcontacto6" >30 o más</option>
                                           </select>
                                         </div>
                                       </div>
-
                                       <div id="mcontacto7" class="md:w-1/2 px-2">
                                         <label class="tracking-wide text-xs font-bold" for="city">
                                           CIUDAD
                                         </label>
-                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="city" type="text" placeholder="Ingresa tu ciudad">
+                                        <input class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2" id="city" name="city" type="text" placeholder="Ingresa tu ciudad" required>
                                       </div>
                                     </div>
 
                                     <div class="-mx-3 md:flex mb-2 px-2">
                                         <div id="mcontacto8" class="md:w-full mb-2 md:mb-0">
-                                          <label class="tracking-wide text-xs font-bold mb-2" for="coment">
+                                          <label class="tracking-wide text-xs font-bold mb-2" for="message">
                                             COMENTARIO
                                           </label>
                                           <div>
-                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="comentario" placeholder="Déjanos algún comentario">
+                                            <textarea class="w-full bg-gray-200 border border-gray-200 px-4 py-2 mb-2 resize-none" id="message" name="message" type="text" placeholder="Déjanos algún comentario">
                                             </textarea>
                                           </div>
                                         </div>
-  
-                                      </div>
-
+                                    </div>
 
                                     <div class="-mx-3 md:flex mt-2 px-2">
                                       <div class="w-full">
-                                        <button id="mcontacto9" class="btn-btn w-full text-white font-bold px-4 py-2">
+                                        <button id="mcontacto9" class="btn-btn w-full text-white font-bold px-4 py-2" type="button" onclick="enviar()">
                                           ENVIAR
                                         </button>
                                       </div>
@@ -354,10 +369,10 @@
 
                                   </div>
                                 </form>
+
                             </div>
                         </div>
                     </div>
-
                 </section>
             </div>
             <a  class="whats-app" href="https://api.whatsapp.com/send?phone=5219841187711&text=Quisiera%20consultar%20más%20información%20sobre%20sus%20servicios.&app_absent=0" target="_blank">
@@ -368,7 +383,7 @@
     
             <div class="w-full flex flex-row flex-wrap">
                 <div class="w-1/6 h-18 flex flex-col">
-                    <img class="w-12 md:w-14 lg:w-18 pb-4" src="images/bg-logo.png" alt="logo-simple">
+                    <a href="https://www.facebook.com/elementmgmt" target="_blank"><img class="w-12 md:w-14 lg:w-24 pb-4" src="images/bg-logo.png" alt="logo-simple"></a>
                 </div>
                 <div class="w-5/6 h-18 flex flex-col">
                     <a href="" class="transition duration-500 ease-in-out transform hover:text-gray-900">Contacto@elementmanagement.mx</a>
@@ -380,6 +395,9 @@
                     </a>
                     <a href="https://www.instagram.com/elementmgmt/" target="_blank">
                         <i class="fab fa-instagram fa-lg mx-4 lg:m-2 transition duration-500 ease-in-out transform hover:text-gray-900"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/element-mgmt" target="_blank">
+                        <i class="fab fa-linkedin fa-lg mx-4 lg:m-2 transition duration-500 ease-in-out transform hover:text-gray-900"></i>
                     </a>
                 </div>
                 <div id="fprivacidad1" class="w-2/6 md:w-1/6 h-10 lg:h-8 flex transition duration-500 ease-in-out transform hover:text-gray-900">
@@ -404,6 +422,7 @@
 			document.getElementById("nav-content").classList.toggle("hidden");
 		}
 	</script>
+    <script src="scripts/contact.js"></script>
     <script src="scripts/animar.js"></script>
     <script src="scripts/jquery.min.js"></script>
     <script src="scripts/jquery.easeing.min.js"></script>
